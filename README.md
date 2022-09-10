@@ -1,4 +1,4 @@
-# baner-maker
+# banner-maker
 
 This application allows you to make a description poster for a product.
 
