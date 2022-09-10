@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Banner Maker App</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+  <h1 id="appTitle">BANNER MAKER APP</h1>
+
+  <!-- EDIT SECTION -->
+  <section id="editSection">
+    <h2 class="title">Edit Banner</h2>
+
+        <!-- TOP ITEMS OBJECTS -->
+        <div class="itemsParent">
+
+          <div id="topImage" class="sectionItem">
+            <span>Select 2 color</span>
+            <div style="display: flex !important;" >
+              <div class="texts">
+                <input id="color1" type="color" class="d-title">
+                <input id="color2" type="color" class="d-title">
+              </div>
+            </div>
+          </div>
+    
+        </div>
+
+    <!-- TOP ITEMS OBJECTS -->
+    <div id="topSections" class="itemsParent">
+
+      <div id="topImage" class="sectionItem">
+        <span>Add main image</span>
+        <div class="inputs">
+          <div class="texts">
+            <input id="mainTitle" type="text" class="d-title" placeholder="Banner main title">
+          </div>
+          <input id="mainImage" type="file" accept="image/jpeg,image/png,image/webp">
+        </div>
+      </div>
+
+      <div id="miniBanner" class="sectionItem">
+        <span>Add mini banner</span>
+        <div class="inputs">
+          <div class="texts">
+            <input id="miniBannerTitle" type="text" class="d-title" placeholder="Title">
+            <input id="miniBannerDesc" type="text" class="d-description" placeholder="Description">
+          </div>
+          <input id="miniBannerImage" type="file" accept="image/jpeg,image/png,image/webp">
+        </div>
+        <button onclick="removeElement(this)" class="removeButton">-</button>
+      </div>
+
+    </div>
+
+    <!-- DETAILS OBJECTS -->
+    <div id="bannerDescriptions" class="itemsParent">
+      <div class="sectionItem descriptionObject">
+        <span>Create Description Object:</span>
+        <div class="inputs">
+          <div class="texts">
+            <input type="text" class="d-title" placeholder="Title" >
+            <input type="text" class="d-description" placeholder="Description" >
+          </div>
+          <input type="file" accept="image/jpeg,image/png,image/webp">
+        </div>
+      </div>
+    </div>
+    
+    <button class="addObjectButton" onclick="createSection()">Add Description Object</button>
+    <button class="addObjectButton" onclick="createBanner()">Create Banner</button>
+    <button class="addObjectButton" onclick="saveBanner()">Save Banner</button>
+  </section>
+
+
+  <!-- REALT-TIME PREVIEW -->
+  <section id="realTimePreview">
+    <h2 id="realTimePreviewTitle">Real-time Preview</h2>
+    <span id="loadingSpan" class="hidden"
+      style="color: black; z-index: 20; width: 100%; text-align: center; display: block;">Loading...</span>
+    <img id="realTimePreviewImage" src="../out/screenshot.jpg" alt="">
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

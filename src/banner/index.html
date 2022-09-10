@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
+        }
+
+        .box {
+            width: 600px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 25px;
+        }
+
+        .top-img {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .top-img span {
+            position: absolute;
+            color: white;
+            font-size: x-large;
+            font-weight: 600;
+            text-shadow: 2px 2px 7px #000;
+            top: 15px;
+            left: 15px;
+        }
+
+        .top-img img {
+            object-fit: cover;
+            width: 100%;
+            /* margin-bottom: 145px; */
+        }
+
+        .left-box {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 45px;
+            margin-bottom: 50px;
+        }
+
+        .left-box img {
+            width: 200px;
+            height: 200px;
+            max-height: 200px;
+            max-width: 200px;
+            object-fit: cover;
+            border-radius: 100%;
+            box-shadow: 1px 1px 10px 1px #000;
+        }
+
+        .left-box .box-text {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            text-align: end;
+            flex-grow: 1;
+            max-width: 320px;
+        }
+
+        .right-box {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 45px;
+            margin-bottom: 50px;
+        }
+
+        .right-box img {
+            width: 200px;
+            height: 200px;
+            max-height: 200px;
+            max-width: 200px;
+            object-fit: cover;
+            border-radius: 100%;
+            box-shadow: 1px 1px 10px 1px #000;
+        }
+
+        .right-box .box-text {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: start;
+            flex-grow: 1;
+            max-width: 300px;
+        }
+
+        .warningBox {
+            width: 500px;
+            height: 200px;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        #descriptionObjects {
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        #miniBanner {
+            width: 100%;
+            max-width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 25px;
+        }
+
+        #miniBanner .texts {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            text-align: end;
+        }
+        #miniBanner img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-left: 12px;
+            -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 30%, rgba(0,0,0,0));
+            /* -webkit-mask-image:-webkit-gradient(linear, left, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))) */
+        }
+    </style>
+
+    <div id="parentDiv" class="box">
+
+        <div class="top-img">
+            <span id="mainTitle"></span>
+            <img id="mainImage" src="">
+        </div>
+
+        <div id="1gradient" class="gradient-line"></div>
+
+        <div id="miniBanner">
+            <img src="">
+            <div class="texts" >
+                <h1 id="title" ></h1>
+                <span id="desc" ></span>
+            </div>
+        </div>
+
+        <div id="2gradient" class="gradient-line" ></div>
+
+        <div id="descriptionObjects"></div>
+
+        <div id="3gradient" class="gradient-line"></div>
+
+        <div class="warningBox warningBoxColor">
+            Packaging: Product display and hygienic body delivery
+            The size is delivered by being packed with double layer PVC packaging.
+            It can be started immediately after the product packaging is opened.
+            <br>
+            <br>
+            Product color tones; may differ according to computer, tablet and phone screens.
+            Accessories shown in the picture are not included in the product price.
+        </div>
+    </div>
+</body>
+
+</html>
