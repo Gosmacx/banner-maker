@@ -15,20 +15,20 @@
   <section id="editSection">
     <h2 class="title">Edit Banner</h2>
 
-        <!-- TOP ITEMS OBJECTS -->
-        <div class="itemsParent">
+    <!-- TOP ITEMS OBJECTS -->
+    <div class="itemsParent">
 
-          <div id="topImage" class="sectionItem">
-            <span>Select 2 color</span>
-            <div style="display: flex !important;" >
-              <div class="texts">
-                <input id="color1" type="color" class="d-title">
-                <input id="color2" type="color" class="d-title">
-              </div>
-            </div>
+      <div id="topImage" class="sectionItem">
+        <span>Select 2 color</span>
+        <div style="display: flex !important;">
+          <div class="texts">
+            <input id="color1" type="color" class="d-title">
+            <input id="color2" type="color" class="d-title">
           </div>
-    
         </div>
+      </div>
+
+    </div>
 
     <!-- TOP ITEMS OBJECTS -->
     <div id="topSections" class="itemsParent">
@@ -63,15 +63,15 @@
         <span>Create Description Object:</span>
         <div class="inputs">
           <div class="texts">
-            <input type="text" class="d-title" placeholder="Title" >
-            <input type="text" class="d-description" placeholder="Description" >
+            <input type="text" class="d-title" placeholder="Title">
+            <input type="text" class="d-description" placeholder="Description">
           </div>
           <input type="file" accept="image/jpeg,image/png,image/webp">
         </div>
       </div>
     </div>
-    
-    <button class="addObjectButton" onclick="createSection()">Add Description Object</button>
+
+    <button class="addObjectButton" onclick="createObject()">Add Description Object</button>
     <button class="addObjectButton" onclick="createBanner()">Create Banner</button>
     <button class="addObjectButton" onclick="saveBanner()">Save Banner</button>
   </section>

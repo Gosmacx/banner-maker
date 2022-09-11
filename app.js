@@ -102,6 +102,7 @@ ipcMain.on('createBanner', async (event, source) => {
 })
 
 ipcMain.on('saveBanner', async () => {
+  // Saving is done by copying the current photo
   const { filePath } = await dialog.showSaveDialog({
     buttonLabel: 'Save Banner',
     defaultPath: `banner-${Date.now()}.jpg`,

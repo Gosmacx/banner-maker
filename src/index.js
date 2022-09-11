@@ -13,7 +13,7 @@ const saveBanner = () => {
     ipcRenderer.send('saveBanner')
 }
 
-const createSection = () => {
+const createObject = () => {
     const parentElement = document.querySelector('#bannerDescriptions')
     const newElement = document.createElement('div')
     newElement.classList.add('descriptionObject', 'sectionItem')
@@ -33,7 +33,10 @@ const createSection = () => {
 
 }
 
+// The data filled in by the user is fetched.
 const createBanner = () => {
+
+    // Description object fetching...
     const descriptionObjects = []
     const basicElements = document.getElementsByClassName('descriptionObject')
     for (const el of basicElements) {
@@ -48,6 +51,7 @@ const createBanner = () => {
         })
     }
 
+    // Mini banner fetching...
     var miniBanner = null;
     if (document.getElementById("miniBanner")) {
         miniBanner = {
