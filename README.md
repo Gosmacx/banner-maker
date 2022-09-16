@@ -2,6 +2,8 @@
 
 This application allows you to make a description poster for a product.
 
+`Electron`, `JSDOM`, `Puppeteer`
+
 ## Working Logic
 
 It processes an existing HTML file with JSDOM and takes a screenshot with the puppeteer, and as a result of the process, a picture is created.
