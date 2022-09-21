@@ -2,6 +2,8 @@
 
 This application allows you to make a description poster for a product.
 
+`Electron`, `JSDOM`, `Puppeteer`
+
 ## Working Logic
 
 It processes an existing HTML file with JSDOM and takes a screenshot with the puppeteer, and as a result of the process, a picture is created.
@@ -13,6 +15,7 @@ Transactions in order:
 - In this case, the out HTML file is a simple website version of the banner we want as a photo. 
 - Then we run this file with puppeteer, take a screenshot and save the screenshot we get.
 
+![howitsworking](https://user-images.githubusercontent.com/50182711/191128760-f418ccda-77a7-40db-9c58-1d677c07ccf0.jpg)
 
 ## Screenshots
 
