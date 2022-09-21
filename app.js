@@ -84,7 +84,7 @@ ipcMain.on('createBanner', async (event, source) => {
   }
 
 
-  // Get all HTML as string
+  // Get all HTML as string and write as file
   const html = document.documentElement.outerHTML
   fs.writeFile('out/out.html', html, (err) => {
     if (err) console.log(err);
